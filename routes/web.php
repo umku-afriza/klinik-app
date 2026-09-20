@@ -8,5 +8,5 @@ Route::get('/', function () {
 
 
 Route::get('/klinik', function () {
-    return 'Sistem Informasi Klinik';
+    return 'Ini adalah Sistem Informasi Klinik';
 });

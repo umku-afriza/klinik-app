@@ -2,14 +2,19 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PatientController;
+use App\Http\Controllers\DoctorController;
+use App\Http\Controllers\PoliController;
 
 
 Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
-Route::get('/patients', [PatientController::class, 'index'])->name('patients.index');
-Route::get('/patients/show/{id}', [PatientController::class, 'show'])->name('patients.show');
+Route::get('/pasien', [PatientController::class, 'index'])->name('pasien.index');
+Route::get('/pasien/show/{id}', [PatientController::class, 'show'])->name('pasien.show');
+
+Route::get('/dokter', [DoctorController::class, 'index'])->name('dokter.index');
+Route::get('/poli', [PoliController::class, 'index'])->name('poli.index');
 
 
 Route::get('/sisfo/{nama}', function ($nama) {

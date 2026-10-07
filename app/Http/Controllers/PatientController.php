@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Patient;
 use Illuminate\Http\Request;
 
 class PatientController extends Controller
@@ -9,9 +10,8 @@ class PatientController extends Controller
     //
     public function index()
     {
-        $judul = 'Data Pasien Rumah Sakit';
-        $jumlahPasien = 1599;
-        return view('pasien.index', compact('judul', 'jumlahPasien'));
+        $patients = Patient::all();
+        return view('pasien.index', compact('patients'));
     }
 
     public function show($id)

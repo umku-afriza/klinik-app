@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head><title>Data Poli</title></head>
-<body>
+@extends('layouts.app')
+@section('title', 'Poli')
+@section('content')
  <h1>Data Poli</h1>
- <p>Halaman data Poli Sistem Informasi Klinik.</p>
-
-</body>
-</html>
+ <p>Selamat datang di Sistem Informasi Klinik.</p>
+@endsection

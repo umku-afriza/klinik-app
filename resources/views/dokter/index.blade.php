@@ -1,9 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head><title>Data Dokter</title></head>
-<body>
- <h1>Data Dokter</h1>
- <p>Halaman data Dokter Sistem Informasi Klinik.</p>
+@extends('layouts.app')
 
-</body>
-</html>
+@section('title', 'Halaman Dokter')
+
+@section('content')
+ <h1>Data Dokter</h1>
+ <p>Selamat datang di Sistem Informasi Klinik.</p>
+@endsection
+
+
